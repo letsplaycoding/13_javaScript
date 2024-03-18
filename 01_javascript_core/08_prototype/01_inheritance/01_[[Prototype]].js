@@ -35,6 +35,6 @@ const greedyStudent = {
     __proto__: student      // user2를 상속받은 student를 상속받은 greedyStudent 
 }
 
-console.log(greedyStudent.activate);        // false
-console.log(greedyStudent.passion);         // true
+console.log(greedyStudent.activate);        // false, user2에서 상속
+console.log(greedyStudent.passion);         // true, student에서 상속
 
