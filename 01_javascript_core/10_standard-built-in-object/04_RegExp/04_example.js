@@ -1,5 +1,4 @@
 /* 04. example */
-/* 04. example */
 
 /* 1. 특정 단어로 시작하는지 검사하는 경우 */
 const url = 'https://www.google.com';
