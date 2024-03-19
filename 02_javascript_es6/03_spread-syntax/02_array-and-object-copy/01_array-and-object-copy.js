@@ -10,9 +10,13 @@ console.log(arrCopy);               // [ 10, 30, 20 ]
 console.log(arr === arrCopy);       // false
 
 /* 2. 객체 복사 */
-let obj = {name: '시부야', age: 2000};
-let objCopy = {...obj};
+let obj = {name: '시부야', age: 2000, addr: '일본', hobby: ['CGV','ATOM']};
 
-console.log(obj);                   // { name: '시부야', age: 2000 }    
-console.log(objCopy);               // { name: '시부야', age: 2000 }
+/* 추가적으로 나머지 연산자 개념으로 활용도 가능하다. */
+// let age = 3000;
+// let objCopy = {...obj, age};
+let objCopy = {...obj};            
+
+console.log(obj);                   // { name: '시부야', age: 2000, addr: '일본', hobby: [ 'CGV', 'ATOM' ] }    
+console.log(objCopy);               // { name: '시부야', age: 2000, addr: '일본', hobby: [ 'CGV', 'ATOM' ] }
 console.log(obj === objCopy);       // false
