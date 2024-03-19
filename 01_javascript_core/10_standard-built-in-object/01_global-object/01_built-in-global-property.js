@@ -10,14 +10,14 @@
 console.log(this);      // {}
 
 /* 글로벌 객체가 가진 프로퍼티 확인 */
-console.log(Object.getOwnPropertyDescriptors(global));
+console.log(Object.getOwnPropertyDescriptors(global));      // Infinity
 
 /* Infinity */
-console.log(global.Infinity);
-console.log(10/0);
+console.log(global.Infinity);           // Infinity
+console.log(10/0);                      // NaN
 
 /* NaN */
-console.log(global.NaN);
+console.log(global.NaN);                // NaN
 console.log(Number('abc'));
 
 /* undefined */
