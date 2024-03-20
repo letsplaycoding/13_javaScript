@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>01. Event Handler Attribute</h1>
+    <!-- onclick과 같이 속성을 사용하면 발생하는 event -->
+
+    <div id="prop">
+        <!-- onclick = attribute -->
+        <button onclick="alert('곤니찌와'); console.log('콘소메 팝콘')">Click</button>
+        <button id="btn" onmouseover="hello('수강생');">마우스를 올려봐~</button>
+    </div>
+    <!-- 객체 => 프로퍼티, 태그 => 어트리뷰트 -->
+    <script>
+        console.log(document.getElementsByClassName('prop'));
+
+        function hello(name) {
+            alert(`${name}씨, 마우스 올리지말어`);
+        }
+    </script>
+</body>
+</html>
