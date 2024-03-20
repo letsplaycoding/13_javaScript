@@ -20,14 +20,14 @@
 
                     return resolve(result);
                 }, 1000);
-            });
+            })
 
             return promise;
 
         }
 
         console.log(increase(0));
-
+        
         // increase(0)
         //     .then(number => console.log(number));
 
@@ -46,19 +46,17 @@
                 console.log(number);
 
                 return increase(number);
-            }).then(number => {
+            })
+            .then(number => {
                 console.log(number);
 
                 return increase(number);
-            }).then(number => {
-                console.log(number);
-
-                return increase(number);
-            }).then(number => {
+            })
+            .then(number => {
                 console.log(number);
                 console.log('end');
-            })
-
+            });
+            
     </script>
 </body>
 </html>
