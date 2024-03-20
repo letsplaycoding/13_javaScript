@@ -22,5 +22,19 @@
         setTimeout(() => console.log('실행'), 1000);      
     </script>
 
+    <button onclick="clearTimeoutFunc();">당장 취소</button>
+
+    <script>
+        const timeId = setTimeout(() => console.log('나는 곧 죽는다'), 6000);
+
+        function clearTimeoutFunc() {
+            console.log('곧이 아니라 지금!!!!!!!!!!!!!!!!!!!!!!');
+
+            /* 매개변수로 던져진 setTimeout 함수 무효화 */
+            clearTimeout(timeId);
+        }
+    </script>
+
+
 </body>
 </html>
